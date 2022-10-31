@@ -1182,6 +1182,10 @@ footer {
 .footer_nav__link:hover {
     color: #f9804b;
 }
+
+.footer_nav:active .active:not(:active) {
+    color: white;
+}
     
 .footer_copyright {
     color: #fff;
