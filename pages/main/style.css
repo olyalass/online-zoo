@@ -543,6 +543,11 @@ h3 {
     margin-top: -2px;
     margin-bottom: 0;
 }
+
+.card-hidden-text {
+    display: none;
+    color:#E47209;
+}
   
 .banana-bamboo {
     position: absolute;
@@ -568,14 +573,21 @@ h3 {
 }
   
 .card:hover .card-description {
-    position: absolute;
-    bottom: 200px;
+    /* position: absolute;
+    top: 70px; */
+    transform: translateY(-300px);
+    transition: transform 0.3s;
+}
+
+.card:hover .card-hidden-text {
+    display:block;
 }
 
 .card:hover .card-img {
     -webkit-filter: brightness(30%);
     filter: brightness(30%);
     transform: scale(1.4);
+    transition: transform 0.3s;
 }
 
 .card:hover .card-title, .card:hover .card-text{
@@ -1085,9 +1097,14 @@ footer {
     height: 42px;
 }
   
-.footer_form__submit:active {
+.footer_form__input:focus ~ .footer_form__submit {
     color: #4B9200;
     border-color: #4B9200;
+}
+
+.footer_form__input:focus:invalid ~ .footer_form__submit {
+    color: #D31414;
+    border-color: #D31414;
 }
   
 .footer_socials_tablet {
