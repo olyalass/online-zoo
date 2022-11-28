@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: "Roboto", sans-serif;
     transition: all 2s;
+    overflow-x: hidden;
 }
   
 a {
@@ -508,10 +509,6 @@ h3 {
     margin-bottom: 20px; 
     cursor: pointer;
 }
-  
-.card:nth-child(3n) {
-    margin-right: 0;
-} 
 
 .card-description {
     padding-left: 14px;
@@ -1809,8 +1806,7 @@ footer {
         display: block;
         width: 100px;
         height: 200px;
-        top: 537px;
-        right: -20px;
+        top: 3167px;
         background-size: auto 100%;
         background-position: -15px -2px;
     }
@@ -1820,63 +1816,383 @@ footer {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 12px;
-      }
+    }
     
-      .footer_container__head {
+    .footer_container__head {
         margin-bottom: 28px;
-      }
+    }
     
-      .footer_form, .footer_form__title {
+    .footer_form, .footer_form__title {
         display:none;
+    }
+    
+    .footer_socials {
+        display: none;
+    }
+    
+    .footer_tablet_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer_socials_tablet {
+        display: block;
+        margin: 0;
+    }
+    
+    .footer_socials_tablet li {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .footer_socials_tablet .footer_socials__logo {
+        margin: 0;
+    }
+    
+    .donate_button {
+        width: 142%;
+       
+    }
+    
+    .footer_bottom {
+        margin-top: 22px;
+    }
+
+    .footer_bottom div {
+        width: 228px;
+    }
+    
+    .footer_nav {
+        margin: 0;
+        width: 300px;
+    }
+    
+    .footer_nav li:not(:last-child) {
+        margin-right: 37px;
+    }
+    
+    .footer_copyright {
+        margin-right: 28px;
+    }
+      
+}
+
+@media screen and (max-width: 620px) {
+
+    .burger-button {
+        top: 12px;
+        right: 10px;
       }
     
-      .footer_socials {
+    .panda-section {
+        height: 220.96px;
+        background-size: auto 84.61%;
+        background-position: center bottom;
+        margin-bottom: 104.04px;
+    }
+
+    .panda-content {
+        width: 146.83px;
+        height: 121.4px;
+        padding-top: 56.17px;
+        margin-right: 10.27px;
+    }
+
+    .circle {
+        width: 119.09px;
+        height: 119.09px;
+        top: 56.17px;;
+        left: 0;
+    }
+
+    .text-panda {
+        width: 128.13px;
+        height: 102.44px;
+        font-size: 28px;
+        top:75.12px;
+    }
+
+    .watch-online {
+        bottom: -118px;
+        left: -151.9px;
+    }
+
+    .backstage {
+        margin-bottom: 38px;
+    }
+
+    .backstage, .backstage-text, .pet-section, .pick-and-feed, .testimonials, .footer_container {
+        max-width: 300px;
+    }
+
+    .backstage-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .text:first-of-type, .backstage-subtitle {
+        margin-left: 2px;
+    }   
+
+    .big-line-height:last-child, .backstage-title{
+        margin-left: 0;
+    }
+
+    .text {
+        max-width: 297px;
+    }
+
+    .backstage-subtitle {
+        margin: 20px 0 10px;
+    }
+
+    .flower {
+        background-size: auto 100%;
+        top: 259px;
+        width: 10.53%;
+        height: 217px;
+        padding: 0;
+    }
+
+    .pet-section {
+        margin: auto;
+    }
+
+    .pets {
+        display: block;
+        margin: auto;
+        height: 1391px;
+    }
+    
+    .card {
+        margin: 0 auto 20px;
+        height: 330px;
+        width: 283.24px;
+        padding: 0;
+    }
+    
+    .img-barrier {
+        height: 285.24px;
+    }
+    
+    .arrow-button {
+        display: none;
+    }
+
+    .palm-2 {
+        height: 72px;
+        width: 58px;
+        top: 2203px;
+        background-size: auto 100%;
+        background-position: center right;
+    }
+    
+    .strelitzia {
+        height: 71px;
+        width: 70px;
+        top: 2209px;
+        background-size: auto 100%;
+        background-position: center left;
+    }
+
+    .gradient {
+        margin-top: 60px;
+    }
+
+    .pick-and-feed {
+        padding: 20px 0 40px;
+    }
+
+    .pick-and-feed__text .text {
+        display: none;
+    }
+
+    .title.orange {
+        font-size: 24px;
+    }
+    
+    .sub-title-pick {
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .how {
+        font-size: 24px;
+        margin: 20px 0 22px;
+    }
+
+    .instruction_images {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 661px;
+    }
+
+    .instruction_images__card, .instruction_images__card:last-child {
+        width: 166px;
+        height: 166px;
+        margin: 0 auto;
+    }
+
+    .instruction_text {
+        position: absolute;
+        top:372px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 540px;
+    }
+
+    .instruction_text p {
+        margin: 0 auto;
+        padding-left: 12px;
+    }
+
+    .green_arrow {
+        -webkit-transform: rotate(85deg);
+        left: 210px;
+        top: 380px;
+    }
+    
+    .green_arrow:last-child {
+        left: 210px;
+        top: 627px;
+    }
+
+    .feed {
+        margin-top: 63px;
+    }
+
+    .testimonials {
+        padding:  30px 0 60px;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    .testimonials__slider {
+        margin-bottom: 30px;
+    }
+
+    .testimonial_card {
+        width: 299px;
+        height: 109px;
+    }
+
+    .leaf {
+        top: 3868px;
+        right: -28px;
+        -webkit-transform: rotate(-15deg);
+        width: 60.3px;
+        height: 75.81px;
+        background-size: 108% auto;
+        background-position: -30px top ;
+    }
+
+    footer {
+        position: relative;
+        padding: 20px 0;
+      }
+    
+      .footer_logo_mobile {
+        display: block;
+        max-width: 280px;
+        margin: auto;
+      }
+    
+     .footer_logo_mobile p {
+      margin-top: 0;
+     }
+    
+      .footer_logo_mobile .logo-pic {
+        left: calc(50% - 7.03px/2 + 14.62px);
+        top: 17px;
+        width: 10.54px;
+        height: 19.56px;
+      }
+    
+      .footer_logo_mobile p {
+        display: block;
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
+        color: #FFFFFF;
+        text-align: center;
+      }
+    
+      .footer_logo {
         display: none;
       }
     
       .footer_tablet_flex {
-        display: flex;
-        justify-content: space-between;
+        display: block;
       }
     
       .footer_socials_tablet {
-        display: block;
-        margin: 0;
+        display: flex;
+        width: 93.75%;
+        justify-content: center;
+        position: absolute;
+        top:73px;
+        padding: 0;
+        margin: auto;
+    
       }
     
       .footer_socials_tablet li {
-        margin: 0;
-        margin-bottom: 20px;
+        margin-right: 30px;
       }
     
-      .footer_socials_tablet .footer_socials__logo {
-        margin: 0;
+      .footer_socials_tablet li:last-child {
+        margin-right: 0;
       }
     
       .donate_button {
-        width: 142%;
-       
+        position: absolute;
+        left: 9px;
+        top: 129px;
+        width: 93.12%;
       }
     
       .footer_bottom {
-        margin-top: 22px;
-      }
-
-      .footer_bottom div {
-        width: 228px;
-      }
-    
-      .footer_nav {
-        margin: 0;
-        width: 300px;
-      }
-    
-      .footer_nav li:not(:last-child) {
-        margin-right: 37px;
+        display: block;
+        margin-top: 230px;
       }
     
       .footer_copyright {
-        margin-right: 28px;
+        position:absolute;
+        right: 10px;
+        bottom: 72px;
+        text-align: right;
+        width: 214px;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 120%;
+        margin-right: 0;
       }
-      
+    
+      .footer_copyright:first-child {
+        bottom: 93px;
+        right: 17px;
+      }
+
+      .footer_nav {
+        width: 278px;
+        margin: auto;
+      }
+    
+      .footer_nav li:not(:last-child) {
+        margin-right: 30px;
+      }
+      .footer_nav li:last-child {
+        margin-right: 0;
+      }
+    
 }
