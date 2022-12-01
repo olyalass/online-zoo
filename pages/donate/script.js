@@ -4,7 +4,7 @@ const len  = buttons.length;
 const basicActive = buttons[2];
 basicActive.classList.add("active-point");
 
-number.defaultValue = "";
+number.defaultValue = "1000";
 
 let prevValue = "1000";
 
