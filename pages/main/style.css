@@ -453,8 +453,7 @@ h3 {
     flex-wrap: wrap;
     flex-shrink: 0;
     width: 100%;
-    row-gap: 20px;
-    column-gap: 30px;
+    justify-content: space-between;
     transition: transform 1s;
     /* transition: left 1s; */
 }
@@ -923,7 +922,7 @@ h3 {
     position: fixed;
     top: 100px;
     right: 20px;
-    background-image: url("./images/exit.png");
+    background-image: url("../../assets/images/exit.png");
     background-repeat: no-repeat;
     background-size: 100%;
     width:14px;
@@ -1322,6 +1321,10 @@ footer {
     .pets {
         margin: auto;
         height: 800px;
+        row-gap: 92px;
+    }
+
+    .frame {
         row-gap: 92px;
     }
 
@@ -1771,7 +1774,7 @@ footer {
     .testimonials__slider {
         display: block;
         height: 358px;
-        overflow: hidden;
+        overflow: scroll;
         margin-bottom: 40px;
     }
     
@@ -1882,7 +1885,7 @@ footer {
     .burger-button {
         top: 12px;
         right: 10px;
-      }
+    }
     
     .panda-section {
         height: 220.96px;
@@ -1962,6 +1965,10 @@ footer {
         display: block;
         margin: auto;
         height: 1391px;
+    }
+
+    .frame {
+        display: block;
     }
     
     .card {

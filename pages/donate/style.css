@@ -2,6 +2,7 @@ body {
     width: 100%;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
   }
   
 a {
@@ -123,6 +124,85 @@ li {
     height: 34px;
     width: 100%;
     display: none;
+}
+
+.burger-button {
+    display: none;
+    position: absolute;
+    top: 11px;
+    right: 20px;
+    width: 18px;
+    height: 10px;
+    box-shadow: none;
+    background-image: url("../../assets/images/burger_menu.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cross-button {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    box-shadow: none;
+    background-image: url("../../assets/images/x-button.png");
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 34px;
+    width: 100%;
+    height: 309px;
+    background-color:  #E5E5E5;
+    z-index: 10;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.burger-logo {
+    display: block;
+    width: 58px;
+    height: 35.92;
+    border: 1px solid #E47209;
+    color:#E47209;
+    font-weight: 400;
+    font-size: 15.2116px;
+    line-height: 120%;
+    text-align: center;
+    padding: 2.84px 3.8px;
+    margin-bottom: 30.4px;
+    text-decoration: none;
+}
+
+.burger-link {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: left;
+
+    color: #333B41;
+    text-decoration: none;
+}
+
+.burger-link:hover {
+    color:#E47209;
+}
+
+.dark-background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 8;
 }
 
 .panda-background {
@@ -386,7 +466,7 @@ li {
     color: #333B41;
 }
   
-.button-area:hover .radio-price, .active-point .radio-price {
+.button-area:hover .radio-price, .active-point + .radio-price {
     color:#FE9013;
 }
 
@@ -662,10 +742,6 @@ footer {
     list-style-type: none;
 }
   
-.footer_nav li:not(:last-child) {
-    margin-right: 58px;
-}
-  
 .footer_nav__link {
     color: #fff;
     font-weight: 400;
@@ -695,4 +771,536 @@ footer {
 }
 .footer_copyright:last-child {
     padding-bottom: 0px;
+}
+
+
+@media screen and (max-width:1200px) {
+    .header_container, .gradient-container, .footer_container {
+        width: 940px;
+    }
+
+    .header_container_section {
+        width: 576px;
+    }
+
+    .header_nav {
+        width: 431px;
+    }
+
+    .panda-background {
+        height: 390px;
+        background-size: 160% auto;
+        background-position: -172px center;
+    }
+
+    .section-title {
+        max-width: 778px;
+        margin-bottom: 30px;
+    }
+
+    .section-text {
+        max-width: 939px;
+    }
+
+    .donation-title {
+        margin-bottom: 40px;
+    }
+
+    .payment {
+        padding: 20px 44px 46px;
+    }
+
+    .payment-title {
+        width: 463px;
+        margin-bottom: 13.5px;
+    }
+
+    .payment-subtitle {
+        padding-left: 3px;
+    }
+
+    .range-box {
+        max-width: 810px;
+        margin: auto;
+        border-radius: 2px;
+    }
+
+    .range-line {
+        max-width: 96.91%;
+    }
+
+    .radio-button:first-child {
+      display: none;
+    }
+
+    .button-area {
+    left: -950%;
+    }
+
+    .input-dollar-sign {
+        left: 63.5%;
+    }
+
+    .gradient {
+        padding-bottom: 30px;
+    }
+
+    .footer_container__head {
+        max-width: 908px;
+        margin-right: auto;
+    }
+
+    .footer_form__input {
+        margin-right: 9px;
+    }
+
+    .footer_nav {
+        justify-content: space-between;
+        width: 332px;
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header_nav, .copyright {
+        display: none;
+    }
+
+    header {
+        height: 34px;
+        position: fixed;
+    }
+
+    .header_container {
+        width: 100%;
+    }
+
+    .logo {
+        position: absolute;
+        height: 29.03px;
+        width: 46.86px;
+        border: none;
+        left: 3.13%;
+        top: 2.29px;
+    }
+
+    .logo-text {
+        position: absolute;
+        bottom: 0;
+        font-size: 12.29px;
+        line-height: 14.75px;
+        font-weight: 400px;
+        text-align: center;
+        margin: 0px;
+    }
+    
+      .logo-pic {
+        bottom: 0.45px;
+        left: 5.54px;
+        width: 4.54px;
+        height: 13.56px;
+    }
+
+    .burger-button {
+        display: block;
+    }
+
+    .panda-background {
+        height: 369px;
+        background-size: 214.5% auto;
+        background-position: -272px 34px;
+    }
+
+    .gradient-container, .footer_container {
+        max-width: 600px;
+    }
+
+    .gradient {
+        padding: 30px 0 46px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .section-text {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .donation-title {
+        margin-bottom: 30px;
+    }
+
+    .payment {
+        padding: 32px 0 30.38px;
+    }
+
+    .payment-title {
+        margin-bottom: 22px;
+        width: 77.16%;
+        padding-left: 13px;
+    }
+    
+    .payment-subtitle {
+        text-align: center;
+        margin-bottom: 53px;
+        
+    }
+    
+    .payment-flex {
+        margin-bottom: 68px;
+        max-width: 100%;
+    }
+    
+    .range-box {
+        width: 100%;
+    }
+    
+    .range-title {
+        top: -30px;
+        left: 10px;
+    }
+    
+    
+    .range-line {
+        width: 87%;
+    }
+    
+    .radio-button:nth-child(2), .radio-button:nth-child(3) {
+        display: none;
+    }
+    
+    .button-area.active-point {
+        background-image: url("../../assets/images/roller_icon_full.png");
+        background-repeat: no-repeat ;
+    }
+    
+    .input-price {
+        width: 176px;
+        height: 38px;
+    }
+    
+    .true-radio {
+        margin-top: 31px;
+    }
+
+    .input-dollar-sign {
+        left: 61.7%;
+        top: 10px;
+    }
+
+    footer {
+        padding-top: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 12px;
+    }
+    
+    .footer_container__head {
+        margin-bottom: 28px;
+    }
+    
+    .footer_form, .footer_form__title {
+        display:none;
+    }
+    
+    .footer_socials {
+        display: none;
+    }
+    
+    .footer_tablet_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer_socials_tablet {
+        display: block;
+        margin: 0;
+    }
+    
+    .footer_socials_tablet li {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .footer_socials_tablet .footer_socials__logo {
+        margin: 0;
+    }
+    
+    .donate_button {
+        width: 142%;
+       
+    }
+    
+    .footer_bottom {
+        margin-top: 22px;
+    }
+
+    .footer_bottom div {
+        width: 228px;
+    }
+    
+    .footer_nav {
+        margin: 0;
+        width: 300px;
+    }
+    
+    .footer_nav li:not(:last-child) {
+        margin-right: 37px;
+    }
+    
+    .footer_copyright {
+        margin-right: 28px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .burger-button {
+        top: 12px;
+        right: 10px;
+    }
+
+    .panda-background {
+        height: 221px;
+        background-position: -148.71px 34px;
+        background-size: 239.5% auto;
+    }
+
+    .gradient-container, .footer_container {
+        max-width: 300px;
+    }
+
+    .section-text {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .donation-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+    }
+    
+    .payment {
+        padding: 20px 0;
+    }
+    
+    .payment-title {
+        width: 77.33%;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+      
+    .payment-subtitle {
+        font-weight: 400;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 0px;
+    }
+    
+    .payment-flex {
+        justify-content: flex-start;
+        margin-bottom: 25px;
+    }
+    
+    .payment-text {
+        width: 29.88%;
+        margin: 0;
+    }
+    
+    .big-number {
+        font-weight: 500;
+        font-size: 40.6015px;
+        line-height: 80%;
+        margin-top:  68px;
+    }
+    
+    .small-text {
+        width:fit-content;
+        font-weight: 400;
+        font-size: 9.02255px;
+        line-height: 140%;
+        padding: 0;
+        margin-top: 6.9px;
+    }
+    
+    .payment-panda-icon {
+        width: 50.46%;
+        padding: 0;
+        height: 148.7px;
+        background-position: left top;
+        background-size: 106% auto;
+        margin-left: 34.09px;
+        margin-top: 10px;
+    }
+    
+    .x-icon {
+        margin-right: 0;
+        margin-left: 0;
+        width: 7.89px;
+        height: 7.89px;
+        margin-left: 6.2px;
+        margin-top: 83.59px;
+    }
+    
+    .range-title {
+        left:0px;
+    }
+    
+    .range-box {
+        padding: 5.75px 0;
+        
+    }
+    
+    .button-area {
+        background-size: 13% 13%;
+    }
+    
+    .button-area:hover, .button-area.active-point {
+        background-size: 50% 50%;
+    }
+    
+    .radio-price {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    
+    .input-price {
+        margin-top: 49px;
+    }
+    
+    .true-radio {
+        margin-top: 27px;
+    }
+    
+    .share {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        width: 102%;
+        margin: 0;
+        margin-left: -4px;
+        word-wrap: normal;
+    }
+    
+    .choose {
+        margin: 30px 0 28px;
+    }
+
+    .input-dollar-sign {
+        left: 74%;
+    }
+
+    .gradient {
+        padding-bottom: 21px;
+    }
+
+    footer {
+        position: relative;
+        padding: 20px 0;
+    }
+    
+    .footer_logo_mobile {
+        display: block;
+        max-width: 280px;
+        margin: auto;
+    }
+    
+    .footer_logo_mobile p {
+      margin-top: 0;
+    }
+    
+    .footer_logo_mobile .logo-pic {
+        left: calc(50% - 7.03px/2 + 14.62px);
+        top: 17px;
+        width: 10.54px;
+        height: 19.56px;
+    }
+    
+    .footer_logo_mobile p {
+        display: block;
+        width: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        font-size: 19.0145px;
+        line-height: 120%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    
+    .footer_logo {
+        display: none;
+    }
+    
+    .footer_tablet_flex {
+        display: block;
+    }
+    
+    .footer_socials_tablet {
+        display: flex;
+        width: 93.75%;
+        justify-content: center;
+        position: absolute;
+        top:73px;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .footer_socials_tablet li {
+        margin-right: 30px;
+    }
+    
+    .footer_socials_tablet li:last-child {
+        margin-right: 0;
+    }
+    
+    .donate_button {
+        position: absolute;
+        left: 9px;
+        top: 129px;
+        width: 93.12%;
+    }
+    
+    .footer_bottom {
+        display: block;
+        margin-top: 230px;
+    }
+    
+    .footer_copyright {
+        position:absolute;
+        right: 10px;
+        bottom: 72px;
+        text-align: right;
+        width: 214px;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 120%;
+        margin-right: 0;
+    }
+    
+    .footer_copyright:first-child {
+        bottom: 93px;
+        right: 17px;
+    }
+
+    .footer_nav {
+        width: 278px;
+        margin: auto;
+    }
+    
+    .footer_nav li:not(:last-child) {
+        margin-right: 30px;
+    }
+    .footer_nav li:last-child {
+        margin-right: 0;
+    }
+    
 }
