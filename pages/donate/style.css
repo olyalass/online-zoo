@@ -466,7 +466,7 @@ li {
     color: #333B41;
 }
   
-.button-area:hover .radio-price, .active-point .radio-price {
+.button-area:hover .radio-price, .active-point + .radio-price {
     color:#FE9013;
 }
 

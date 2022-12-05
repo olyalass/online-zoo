@@ -1,12 +1,43 @@
+const burgerButton = document.querySelector(".burger-button");
+const burgerMenu = document.querySelector(".burger-menu");
+const background = document.querySelector(".dark-background");
+
+function menu(burgerButton, burgerMenu, background) {
+  burgerButton.addEventListener("click", () => {
+      if (burgerButton.classList.contains("burger-button")) {
+        burgerMenu.style.display = "block";
+        burgerButton.classList.remove("burger-button");
+        burgerButton.classList.add("cross-button");
+        background.style.display = "block";
+      } else {
+        burgerMenu.style.display = "none";
+        burgerButton.classList.remove("cross-button");
+        burgerButton.classList.add("burger-button");
+        background.style.display = "none";
+      }
+  });
+  background.addEventListener("click", () => {
+      if (burgerButton.classList.contains("cross-button")) {
+        burgerMenu.style.display = "none";
+        burgerButton.classList.remove("cross-button");
+        burgerButton.classList.add("burger-button");
+        background.style.display = "none";
+      }
+  });
+}
+
+menu(burgerButton, burgerMenu, background);
+
+
 const buttons = document.querySelectorAll(".button-area");
 const number = document.querySelector(".input-price");
 const len  = buttons.length;
-const basicActive = buttons[2];
-basicActive.classList.add("active-point");
+// const basicActive = buttons[2];
+// basicActive.classList.add("active-point");
 
-number.defaultValue = "1000";
+number.defaultValue = "100";
 
-let prevValue = "1000";
+let prevValue = "100";
 
 const valueButtonsElements = {};
 
@@ -54,8 +85,8 @@ function valueCheck (number) {
 
         number.value = prevValue;
         const active = document.querySelector(".active-point");
-        const isMediumScreen = window.matchMedia("(max-width: 1000px)").matches;
-        const isSmallScreen = window.matchMedia("(max-width: 640px)").matches;
+        const isMediumScreen = window.matchMedia("(max-width: 1200px)").matches;
+        const isSmallScreen = window.matchMedia("(max-width: 950px)").matches;
         let priceRange = [5000, 2000, 1000, 500, 250, 100, 50, 25];
 
         if (isMediumScreen) {
