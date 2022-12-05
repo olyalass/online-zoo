@@ -36,10 +36,9 @@ const miniCards = document.querySelectorAll(".testimonial_card");
 
 
 function popUpOpen (card, background, exit) {
-    const isSmallScreen = window.matchMedia("(max-width: 640px)").matches;
-    if (isSmallScreen) {
-        card.addEventListener("click", () => {
-            
+    card.addEventListener("click", () => {
+        const isSmallScreen = window.matchMedia("(max-width: 950px)").matches;
+        if (isSmallScreen) {
             if (card.classList.contains("testimonial_card")) {
                 card.classList.remove("testimonial_card");
                 card.classList.add("popup-border");
@@ -48,8 +47,8 @@ function popUpOpen (card, background, exit) {
                 exit.style.zIndex = "19";
                 console.log('open');
             }
-        });
-    };
+        }
+    });
 };
 
 function close(card) {
@@ -74,9 +73,10 @@ function popUpClose (card, exit, background) {
 
 for (let card of miniCards) {
     popUpOpen (card, background, exit);
-    popUpClose (card, exit, background);};
+    popUpClose (card, exit, background);
+};
 
-    const containerElement = document.querySelector(".pets");
+const containerElement = document.querySelector(".pets");
 const leftArrowElement = document.querySelector(".arrow-button.left");
 const rightArrowElement = document.querySelector(".arrow-button.right");
 
@@ -310,7 +310,7 @@ function moveFrame(currentFrameElement, nextFrameElement, direction) {
 }
 
 function slider() {
-    const isSmallScreen = window.matchMedia("(max-width: 640px)").matches;
+    const isSmallScreen = window.matchMedia("(max-width: 950px)").matches;
     const itemsPerSlide = isSmallScreen ? 4 : 6;
 
     let currentSlide = createNewSlide(itemsPerSlide);
@@ -341,11 +341,11 @@ function tSlide (range, slide) {
     
     range.addEventListener('input', (event) => {
         let value = event.target.value;
-        const isSmallScreen = window.matchMedia("(max-width: 1000px)").matches;
+        const isSmallScreen = window.matchMedia("(max-width: 1328px)").matches;
         if (isSmallScreen) {
-            value=value*320;}
+            value=value*322.875;}
         else {
-            value=value*250;
+            value=value*260.75;
         }
         slide.style.transform=`translateX(-${value}px)`;
         
